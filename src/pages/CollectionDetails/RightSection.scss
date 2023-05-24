@@ -1,0 +1,111 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.rightSectionWrapper {
+  margin-top: 120px;
+  width: 65%;
+  .RightHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .itemDetails {
+      border-top: 1px dashed rgba(48, 53, 73, 0.25);
+      display: flex;
+      flex-flow: row wrap;
+      margin-top: 28px;
+      .detail {
+        padding-top: 31px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 35px;
+        color: $CreateBtnBg;
+      }
+    }
+    .itemInfo {
+      margin-top: 15px;
+      margin-left: 12px;
+      .noOfItems {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: $GrayColor;
+      }
+      .infoIcon {
+        margin-left: 28px;
+      }
+      .infoText {
+        margin-left: 13px;
+      }
+    }
+    .socialIcons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .socialIconImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 36px;
+        height: 36px;
+        background: $textColor;
+        border: 1px solid rgba(124, 150, 182, 0.34);
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin-left: 13px;
+      }
+      .changebg {
+        background: #000000;
+      }
+      .changebgColor {
+        background: $ExploreBtnBg;
+        cursor: pointer;
+      }
+    }
+    .leftSideWithImage {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      .creatorDetails{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+      }
+      .textSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        .createdBy {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 35px;
+          text-transform: uppercase;
+          color: $GrayColor;
+        }
+        .creatorName {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          text-transform: capitalize;
+          color: #303549;
+        }
+      }
+      .imageSection {
+        img {
+          width: 116px;
+          height: 116px;
+        }
+      }
+    }
+  }
+}

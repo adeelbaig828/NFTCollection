@@ -1,0 +1,25 @@
+@import "../../../styles//mixins";
+@import "../../../styles//variables";
+
+.connectButton {
+  border-radius: 4px !important;
+  height: 36px !important;
+}
+.walletBtn {
+  padding: 8px;
+  height: 36px;
+  background: $textColor;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 28px;
+  text-transform: capitalize;
+  color: $CreateBtnBg;
+  cursor: pointer;
+}

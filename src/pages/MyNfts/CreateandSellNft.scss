@@ -1,0 +1,39 @@
+@import "../../styles/variables";
+@import "../../styles/mixins.scss";
+
+.instructionSection {
+    margin-top: 180px;
+    padding: 0% 60px;
+    padding-bottom: 60px;
+    @media screen and (max-width:850px) {
+      margin-top: 60px;
+    }
+  .headingText {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 75px;
+    color: $CreateBtnBg;
+    display: flex;
+    justify-content: flex-start; 
+    align-items: flex-start;
+    @media screen and (max-width:850px) {
+      font-size: 35px;
+      line-height: 55px;
+    }
+    @include mobile {
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      display: block;
+    }
+  }
+}
+
+
+@media screen and (max-width:1100px) {
+  .instructionSection {
+      padding: 0 30px;
+  }
+}

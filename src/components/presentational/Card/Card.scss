@@ -1,0 +1,131 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.imageCard {
+  .ant-card {
+    width: 100%;
+    height: auto;
+    border-radius: 10px !important;
+    box-shadow: 0px 4px 16px -7px rgba(83, 82, 237, 0.57);
+    .ant-card-meta-title {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      text-transform: capitalize;
+      color: $CreateBtnBg;
+      margin-top: 12px;
+      @include mobile {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 19px;
+        text-transform: capitalize;
+      }
+    }
+    .ant-card-meta-description {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 24px;
+      color: $CreateBtnBg;
+      padding-bottom: 12px !important;
+      @include mobile {
+        font-size: 14px;
+        line-height: 35px;  
+        padding-bottom: 0 !important;
+        margin: 0;
+      }
+    }
+  }
+
+  .coverWrapper {
+    position: relative;
+    .frame {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 38px;
+      height: 38px;
+      background-color: $Black;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      position: absolute;
+      top: 10px;
+      right: 14px;
+      z-index: 10;
+    }
+    .footer {
+      position: absolute;
+      bottom: -40px;
+      right: 30px;
+      width: 65px;
+      height: 65px;
+      border-radius: 50%;
+      object-fit: contain;
+    }
+    .tag {
+      position: absolute;
+      top: 44px;
+      left: -70px;
+      width: 153px;
+      height: 57px;
+      background: $ExploreBtnBg;
+      box-shadow: 0px 4px 16px -7px rgba(83, 82, 237, 0.57);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      color: $textColor;
+      @include mobile {
+        left: -15px;
+      }
+    }
+    .coverImage {
+      img {
+        width: 100%;
+        height: 303px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+       @media screen and (min-width:620px) and (max-width:850px) {
+        height: 153px;        
+       }
+      }
+    }
+  }
+
+  .ant-card-body{
+    padding: 24px 12px;
+  }
+  .ant-tooltip {
+    box-shadow: 0px 4px 16px -5px rgba(83, 82, 237, 0.2) !important;
+    border-radius: 3px !important;
+  }
+  .idSection{
+    color: $GrayColor;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 12px;
+  }
+  .dFlex{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .createdBy{
+    margin-top: 8px;
+    font-size: 12px;
+    float: right;
+    .textStyle{
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,153 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.LoginWrapper {
+  width: 100%;
+  padding-bottom: 30px;
+  .LoginPageHeader {
+    width: 100%;
+    margin-bottom: 5px;
+    img{
+      width: 100%;
+      height: inherit;
+    }
+  }
+  .loginFormWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -170px;
+    @include mobile{
+      padding: 0% 5%;
+      margin-top: -50px;
+    }
+
+    .loginForm {
+      width: 60%;
+      padding:20px 35px;
+      background: $textColor;
+      box-shadow: 0px 4px 16px -7px rgba(83, 82, 237, 0.57);
+      border-radius: 10px;
+      @include mobile{
+        width:100%;
+      }
+      .orText {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-bottom: 1px dashed rgba(48, 53, 73, 0.25);
+        span {
+          // margin-bottom: -12px;
+          background: $textColor;
+        }
+      }
+      .createAcc {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15px;
+        .createAccText {
+          width: 262px;
+          height: 46px;
+          background: $textColor;
+          border: 1px solid rgba(48, 53, 73, 0.22);
+          box-sizing: border-box;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24px;
+          color: $CreateBtnBg;
+        }
+      }
+      .form {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .toLoginText {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 35px;
+          color: $ExploreBtnBg;
+        }
+        .inputField {
+          width: 100%;
+          // margin-top: 23px;
+        }
+        .MT {
+          // margin-top: 59px;
+        }
+        .ant-form {
+          width: 100%;
+          // margin-top: 59px;
+        }
+        .ant-btn {
+          height: 50px;
+          background: $ExploreBtnBg;
+          border: none !important;
+          border-radius: 10px;
+          width: 100%;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 24px;
+          text-transform: capitalize;
+          color: $textColor;
+        }
+        .unsetLeftBorder {
+          .ant-input {
+            border-radius: 0px 10px 10px 0px !important;
+          }
+          .ant-input-group-addon {
+            border-radius: 10px 0px 0px 10px !important;
+          }
+        }
+        .ant-input-group-addon {
+          background: $InputBg !important;
+          line-height: 2.9715;
+          background: $InputBg !important;
+          border-radius: 10px !important;
+          border: none !important;
+        }
+        .ant-input-affix-wrapper {
+          background: $InputBg !important;
+          line-height: 2.9715;
+          background: $InputBg !important;
+          border-radius: 10px !important;
+          border: none !important;
+        }
+        .ant-input {
+          background: $InputBg !important;
+          line-height: 2.9715;
+          background: $InputBg !important;
+          border-radius: 10px !important;
+          border: none !important;
+        }
+        .formHeadingWrapper {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: 100%;
+          margin-bottom: 5px;
+          .loginAcc {
+            font-family: "Rubik";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 28px;
+            color: $CreateBtnBg;
+          }
+        }
+      }
+    }
+  }
+}

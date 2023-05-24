@@ -1,0 +1,94 @@
+@import "../../styles/variables";
+@import "../../styles/mixins.scss";
+
+.featured {
+  height: auto;
+  padding: 5% 0%;
+  background: $FeaturedBg;
+  margin-top: 180px;
+@media screen and (max-width:850px) and (min-width:620px) {
+  margin-top: 80px;
+}  
+  @include mobile{
+    margin-top: 20px;
+    padding: 40px 0 50px 0;
+  }
+  .cardGrid {
+    margin-top: 20px; 
+    padding: 0% 60px;
+    // margin-left: 257px;
+    // margin-right: 237px;
+
+    .ant-col {
+      margin-top: 30px !important;
+      @media screen and (max-width:850px) {
+        max-width: 100%;
+        flex: 100%; 
+      }
+    }
+    @include mobile{
+      display: none;
+    }
+  }
+  .heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 60px;
+    .feature {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 50px;
+      line-height: 75px;
+      color: $TopHitsHeadingColor;
+      @include mobile {
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    .discover {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 35px;
+      color: $TopHitsHeadingColor;
+      padding-right: 12px;
+      @include mobile {
+        font-size: 12px;
+        line-height: 35px;  
+      }
+    }
+
+    a {
+      img {
+        height: 11px;
+      }
+    }
+  }
+  .ant-carousel .slick-dots {
+    position: unset;
+  }
+  .ant-carousel .slick-dots li button  {
+    background: #c4c4c4;
+    border-radius: 21px;
+    margin-top: 20px;
+    position: unset !important;
+   
+  }
+  .ant-carousel .slick-dots li.slick-active button {
+    background: #f37342 !important;
+    border-radius: 21px;
+  }
+  .ant-carousel{
+    padding: 0% 5%;
+  }
+}
+
+
+@media screen and (max-width:1100px) {
+  .featured .heading, .featured .cardGrid {
+      padding: 0 30px;
+  }
+}

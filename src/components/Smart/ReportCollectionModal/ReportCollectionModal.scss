@@ -1,0 +1,42 @@
+@import "../../../styles/mixins";
+@import "../../../styles//variables";
+
+.reportWrapper {
+  .title {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: $CreateBtnBg;
+  }
+  .ant-input {
+    background: $InputBg !important;
+    line-height: 2.9715;
+    background: $InputBg !important;
+    border-radius: 10px !important;
+    border: none !important;
+  }
+  .ant-select-selector {
+    background: $InputBg !important;
+    line-height: 2.9715;
+    background: $InputBg !important;
+    border-radius: 10px !important;
+    border: none !important;
+    height: 48px !important;
+    align-items: center;
+  }
+  .ant-btn {
+    height: 50px;
+    background: $ExploreBtnBg;
+    border: none !important;
+    border-radius: 10px;
+    width: 100%;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: $textColor;
+  }
+}

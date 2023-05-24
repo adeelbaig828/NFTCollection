@@ -1,0 +1,18 @@
+.breadcrumb-item + .breadcrumb-item {
+    padding-left: .5rem;
+}
+.breadcrumb-item {
+    font-size: .875rem;
+    font-weight: 500;
+    .active-breadCrumb{
+        color: var(--breadcrumb-active) !important;
+    }
+    .in-Active{
+        color: var(--breadcrumb-inactive) !important;;
+    }
+}
+
+.home-icon-color{
+    color: var(--breadcrumb-inactive) !important;
+}
+ 

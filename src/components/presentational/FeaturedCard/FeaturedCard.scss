@@ -1,0 +1,168 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.featuredCard {
+  .ant-card {
+    width: 100%;
+    height: 172px;
+    background: $textColor;
+    box-shadow: 0px 4px 16px -7px rgba(83, 82, 237, 0.57);
+    border-radius: 10px;
+    @include mobile {
+      height: 130px;
+    }
+    .ant-card-body {
+      padding: unset !important;
+    }
+  }
+  .cardContent {
+    position: relative;
+    display: flex;
+    cursor: pointer;
+    height: 100%;
+    .content {
+      display: flex; 
+      justify-content: space-between;  
+      align-items: center;  
+      width: 100%;
+      padding: 30px;
+      @include mobile {
+        padding: 16px 30px;
+      }
+    }
+    .idSection{
+      color: $GrayColor;
+      font-weight: bold;
+      font-size: 14px;
+      margin-top: 12px;
+    }
+    .createdBy{
+      margin-top: 8px;
+      font-size: 12px;
+      float: right;
+      width: 100%;
+      .textStyle{
+        font-weight: bold;
+        text-decoration: underline;
+      }
+    }
+    .coverImageWrapper {
+      position: relative;
+      cursor: pointer;
+      width: 40%;
+      .coverImage {
+        width: 100%;
+        img {
+          width: 100%;
+          height: 172px;
+          object-fit: cover;
+          border-radius: 10px 0px 0px 10px;
+          @media screen and (max-width:820px) {
+            height: 130px;
+          }
+        }
+      }
+      .tagImage {
+        position: absolute;
+        top: 20px;
+        right: -24px;
+        width: 54px;
+        height: 54px;
+        img {
+          border-radius: 50%;
+          object-fit: contain;
+          width: inherit;
+          height: inherit;
+        }
+      }
+    }
+    .description {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      cursor: pointer;
+      .head {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1;
+        text-transform: capitalize;
+        color: $CreateBtnBg;
+        @include mobile {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 19px;
+          text-transform: capitalize;
+          color: #303549;
+        }
+      }
+      .desc {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        color: $CreateBtnBg;
+        margin-top: 8px;
+        flex-flow: row wrap;
+        @include mobile {
+          margin-top: 0px;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 35px;
+        }
+      }
+      .StatsSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-top: 12px;
+
+        .avgSection {
+          display: flex;
+          align-items: flex-end;
+          .avg {
+            padding-left: 4px;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            color: $CreateBtnBg;
+          }
+          img{
+            padding-bottom: 3px;
+          }
+        }
+        .floorSection {
+          margin-left: 12px;
+          display: flex;
+          align-items: flex-end;
+          .floor {
+            padding-left: 4px;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            color: $CreateBtnBg;
+          }
+          img{
+            padding-bottom: 3px;
+          }
+        }
+      }
+    }
+    .frameIconSection {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+      z-index: 999;
+    }
+  }
+  .orangeFrame{
+    cursor: pointer;
+  }
+}

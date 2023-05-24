@@ -1,0 +1,146 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.NftDetailPageWrapper {
+  width: 100%;
+  background: #ffffff;
+  .searchBar {
+    width: 100%;
+    height: 97px;
+    background: $SkyBlurColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0% 5%;
+    .reset {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: $OrangeColor;
+      margin-left: 27px;
+    }
+    .inputSection {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .filterImage {
+        margin-left: 27px;
+      }
+      .filterDropdown {
+        width: 150px;
+        height: 45px;
+        background: $textColor;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 27px;
+      }
+      .searchInput {
+        width: 348px;
+        .ant-input-affix-wrapper {
+          border: none !important;
+          border-radius: 5px;
+          height: 45px;
+        }
+      }
+    }
+  }
+  .resultCardsGrid {
+    background: $SkyBlurColor;
+    padding-bottom: 20px;
+    .heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      // margin-left: 257px;
+      padding: 0% 60px;
+      @media screen and (max-width:1100px) {
+        padding: 0% 30px;
+      }
+      margin-top: 40px;
+      .seeMore {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 75px;
+        color: $CreateBtnBg;
+        @media screen and (max-width:900px) {
+          font-size: 25px;
+        }
+        @include mobile{
+          font-size: 20px;
+        }
+      }
+      .view{
+        font-family: 'Rubik';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 5px;
+        color: $CreateBtnBg;
+        margin-right: 8px;
+
+      }
+    }  
+    .cardGrid {
+      margin-top: 2px;
+      padding: 0% 5%;
+      .ant-col {
+        margin-top: 30px !important;
+      }
+    }
+  }
+  .selectedCollection {
+    margin-top: -167px;
+    padding: 0% 60px;
+    @media screen and (max-width:1100px) {
+      padding: 0% 30px;
+    }
+    @media screen and (max-width:900px) {
+      margin-top: -77px;
+    }
+    display: flex;
+    flex-direction: column;
+    @include mobile{
+      margin-top: 50px;
+    }
+    .CollectionDetailsSubHeader {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include mobile{
+        flex-direction: column;
+      }
+    }
+    .searchedCard {
+    }
+  }
+  .CollectionPageHeader {
+    width: 100%;
+    margin-bottom: 5px;
+    img {
+      width: 100%;
+      height: inherit;
+    }
+  }
+  .ant-carousel .slick-dots {
+    position: unset;
+  }
+  .ant-carousel .slick-dots li button {
+    background: #c4c4c4;
+    border-radius: 21px;
+    margin-top: 20px;
+    position: unset !important;
+  }
+  .ant-carousel .slick-dots li.slick-active button {
+    background: #f37342 !important;
+    border-radius: 21px;
+  }
+  .ant-carousel {
+    padding: 0% 5%;
+  }
+}

@@ -1,0 +1,165 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.detailSection {
+  .detailselectedCollection {
+    .detailCollectionDetailsSubHeader {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-top: 40px;
+      border-top: 1px dashed rgba(48, 53, 73, 0.25);
+      margin-top: 30px;
+      @include mobile {
+        flex-direction: column;
+      }
+      .leftSide {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+        width: 48%;
+        @include mobile {
+          width: 100%;
+          gap: 24px;
+        }
+        .aboutUser {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 36px;
+          text-transform: capitalize;
+          @media screen and (max-width:500px) {
+            font-size: 22px;
+          }
+        }
+      
+        .aboutUserDesc {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          color: $CreateBtnBg;
+          .headerDesign {
+            background: #f2fafc;
+            border: 1px solid rgba(48, 53, 73, 0.5);
+            border-radius: 5px;
+          }
+          .nftTraitWrpper {
+            display: flex;
+            justify-content: space-evenly;
+            gap: 10px;
+            flex-flow: row wrap;
+            padding: 2% 0;
+          }
+          .nftTrait {
+            padding: 8px 12px;
+            width: 30%;
+            // border: 1px solid #92c4ea;
+            // 8E9295
+            background: #f3f8fd;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+            border-radius: 5px;
+            box-shadow: 0px 4px 16px -7px rgba(83, 82, 237, 0.57);
+
+            .name {
+              font-family: "Rubik";
+              font-style: normal;
+              font-size: 11px;
+              text-transform: uppercase;
+            }
+            .percentage {
+              font-family: "Rubik";
+              font-style: normal;
+              font-size: 11px;
+              text-transform: uppercase;
+            }
+            .value {
+              font-family: "Rubik";
+              font-style: normal;
+              font-weight: 500;
+              font-size: 15px;
+              color: rgb(53, 56, 64);
+            }
+          }
+        }
+      }
+    }
+    .details {
+      width: 48%;
+      @include mobile {
+        width: 100%;
+        margin-top: 30px;
+      }
+      .heading {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 36px;
+        text-transform: capitalize;
+      }
+      .flexStyle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px dashed rgba(48, 53, 73, 0.25);
+        margin-top: 22px;
+        .key {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          color: $GrayColor;
+        }
+        .value {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          color: $CreateBtnBg;
+          a {
+            color: unset !important;
+          }
+          .dFlex {
+            img {
+              margin-right: 14px;
+              margin-top: -4px;
+            }
+          }
+        }
+      }
+    }
+    .statsSection {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      @include mobile {
+        flex-direction: column;
+      }
+      .chartContainer {
+        width: 48%;
+        @include mobile {
+          width: 100%;
+        }
+      }
+      .offers {
+        width: 48%;
+        @include mobile {
+          width: 100%;
+        }
+      }
+    }
+    .searchedCard {
+    }
+  }
+}

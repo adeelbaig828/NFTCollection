@@ -1,0 +1,115 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.featuredLoadingCard {
+  .ant-card {
+    width: 100%;
+    height: 172px;
+    background: $textColor;
+    box-shadow: 0px 4px 16px -7px rgba(83, 82, 237, 0.57);
+    border-radius: 10px;
+    .ant-card-body {
+      padding: unset !important;
+    }
+  }
+  .cardContent {
+    position: relative;
+    display: flex;
+    .content {
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 30px;
+      // padding-top: 10px;
+    }
+    .coverImageWrapper {
+      position: relative;
+      width: 40%;
+      border-radius: 10px 0px 0px 10px;
+      .coverImage {
+        width: 100%;
+        img {
+          width: 100%;
+          height: 172px;
+          object-fit: cover;
+          border-radius: 10px 0px 0px 10px;
+        }
+      }
+      .tagImage {
+        position: absolute;
+        top: 20px;
+        right: -24px;
+        width: 54px;
+        height: 54px;
+        img {
+          border-radius: 50%;
+          object-fit: contain;
+          width: inherit;
+          height: inherit;
+        }
+      }
+    }
+    .description {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .head {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1;
+        text-transform: capitalize;
+        color: $CreateBtnBg;
+      }
+      .desc {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 35px;
+        color: $CreateBtnBg;
+        flex-flow: row wrap;
+      }
+      .StatsSection {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .avgSection {
+          width: 40px;
+          background: linear-gradient(270deg, #f2fafc 0%, #e1ecef 100%);
+          .avg {
+            padding-left: 4px;
+            width: 100%;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            color: $CreateBtnBg;
+          }
+        }
+        .floorSection {
+          margin-left: 12px;
+          width: 40px;
+          background: linear-gradient(270deg, #f2fafc 0%, #e1ecef 100%);
+          .floor {
+            padding-left: 4px;
+            font-family: "Lato";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 12px;
+            line-height: 14px;
+            color: $CreateBtnBg;
+          }
+        }
+      }
+    }
+    .frameIconSection {
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+  }
+}

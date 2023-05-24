@@ -1,0 +1,93 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.CategoryFlickerWrapper {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  @include mobile{
+    width: 100%;
+    padding: 0% 5%;
+  }
+  .arrow {
+    // padding: 8px 14px;
+    // background: $ExploreBtnBg;
+    // border-radius: 5px;
+    cursor: pointer;
+  }
+  .leftArrow {
+    margin-right: 14px;
+  }
+  .rightArrow {
+    margin-left: 14px;
+  }
+  .active {
+    // width: 177px;
+    // height: 67px;
+    padding: 15px 40px;
+    background: #f37342;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    font-size: 20px;
+  }
+  .notActive {
+    // width: 177px;
+    // height: 67px;
+    padding: 15px 40px;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 8px;
+    font-size: 20px;
+    background: white;
+
+  }
+  .changeCursor{
+    cursor: pointer;
+  }
+  .resetFilters{
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $GrayColor;
+    // margin-left: 27px;
+    cursor: pointer;
+    @include mobile {
+      // margin-left: unset;
+      // margin-top: 12px;
+    }
+  }
+}
+.resetWrapper{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 95%;
+  margin: 0 auto;
+  @include mobile{
+    // display: none;
+  }
+  .resetFilters{
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: $GrayColor;
+    // margin-left: 27px;
+    cursor: pointer;
+    @include mobile {
+      // margin-left: unset;
+      // margin-top: 12px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+
+  .CollectedNftsCardGrid {
+    margin-top: 20px;
+    padding: 0% 5%;
+
+    // margin-left: 257px;
+    // margin-right: 237px;
+    .ant-col {
+      margin-top: 30px !important;
+    }
+    .infinite-scroll-component__outerdiv{
+      .infinite-scroll-component {
+        overflow: unset !important;
+      }
+    }
+  }
+  .filterHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 60px;
+    padding: 0% 5%;
+    @include mobile{
+      display: none;
+    }
+    .filterItem {
+      .highlighted {
+        background: $OrangeShadeColor;
+        border-radius: 100px;
+        padding: 10px 14px;
+
+      }
+      .text {
+        padding: 10px 14px;
+      }
+      .value {
+        margin-left: 12px;
+      }
+    }
+  }

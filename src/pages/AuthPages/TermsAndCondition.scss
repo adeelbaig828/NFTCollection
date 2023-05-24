@@ -1,0 +1,108 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.mb50{margin-bottom:50px}
+.TermsAndConditionHeader {
+  width: 100%;
+  margin-bottom: 5px;
+  height: 60px;
+  img {
+    width: 100%;
+    height: inherit;
+  }
+  .TermsAndConditionHeadingSection {
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @include mobile {
+      top: 10%;
+      width: 100%;
+    }
+    .TermsAndConditionText {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 35px;
+      color: $textColor;
+      @include mobile {
+        line-height: 1.25;
+        font-size: 18px;
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+      }
+    }
+    .TermsAndConditionHeading {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 75px;
+      text-align: center;
+      color: $textColor;
+      @include mobile {
+        line-height: 1.25;
+        font-size: 24px;
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.TermsWrapper {
+  width: 100%;
+  padding-bottom: 30px;
+  .termsPageHeader {
+    width: 100%;
+    margin-bottom: 5px;
+    img {
+      width: 100%;
+      height: inherit;
+    }
+  }
+}
+  .TermsViewWrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: -170px;
+    @include mobile {
+      margin-top: -50px;
+      padding: 0% 5%;
+    }
+  
+  }
+  .contentStyling{
+      font-family: 'Rubik';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 35px;
+/* or 194% */
+margin-bottom: 10px;
+
+color: #303549;
+  }
+  .headingStyling{
+    font-family: 'Rubik';
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px ;
+    line-height: 36px;
+    /* identical to box height */
+    
+    text-transform: capitalize;
+    
+    color: #303549;
+  }
+
+

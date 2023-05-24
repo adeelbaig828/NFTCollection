@@ -1,0 +1,186 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.UploadNft {
+  .UploadNftHeader {
+    width: 100%;
+    margin-bottom: 5px;
+    img {
+      width: 100%;
+      height: inherit;
+    }
+    .UploadNftHeadingSection {
+      position: absolute;
+      top: 27%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 1500px) {
+        top: 200px;
+      }
+      @media screen and (max-width: 1100px){
+        top: 160px;
+      }
+      @media screen and (max-width: 900px){
+        top: 143px;
+      }
+      @include mobile {
+        top: 27%;
+        width: 100%;
+      }
+      .UploadNftText {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 35px;
+        color: $textColor;
+        @media screen and (max-width:900px) {
+          font-size: 14px;
+          line-height: 14px;
+        }
+        @include mobile {
+          line-height: 1.25;
+          font-size: 18px;
+          text-align: center;
+          display: inline-block;
+          width: 100%;
+        }
+      }
+      .UploadNftHeading {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 75px;
+        text-align: center;
+        color: $textColor;
+        @media screen and (max-width: 1300px){
+          font-size: 44px;
+        }
+        @media screen and (max-width: 900px) {
+          font-size: 33px;
+        }
+        @include mobile {
+          line-height: 1.25;
+          font-size: 24px;
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .UploadNftUploadImageWrapper {
+    margin-top: 70px;
+    .ant-radio-inner {
+      background: rgba(243, 115, 66, 0.14) !important;
+      border-color: $ExploreBtnBg !important;
+    }
+    .ant-radio-inner::after {
+      background: $ExploreBtnBg !important;
+    }
+    .submitBtn {
+      margin-top: 30px;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: center;
+      background: $ExploreBtnBg;
+      border-radius: 10px;
+      width: 150px;
+      margin-bottom: 60px;
+      cursor: pointer;
+      .submit {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #ffffff;
+      }
+    }
+    .agreeSection {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 30px;
+      .agree {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 21px;
+        color: $FadeGrayColor;
+      }
+      .termConditions {
+        color: $OrangeColor;
+      }
+    }
+    .dropZoneHeader {
+      width: 100%;
+    }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0% 60px;
+    @media screen and (max-width:1100px) {
+      padding: 0% 30px;
+    }
+    .step2Header {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      .step2 {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: $ExploreBtnBg;
+      }
+      .desc {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: $CreateBtnBg;
+        margin-top: 19px;
+      }
+      .desc2 {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: $FadeGrayColor;
+        margin-top: 19px;
+      }
+    }
+    .uploadForm {
+      margin-bottom: 30px;
+      .collectionImages {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        .smallImage {
+          width: 48%;
+        }
+        .largeImage {
+          width: 48%;
+        }
+      }
+      .bannerImage {
+        width: 100%;
+      }
+    }
+  }
+}

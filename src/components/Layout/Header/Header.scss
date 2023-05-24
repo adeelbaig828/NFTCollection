@@ -1,0 +1,137 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins.scss";
+
+.header {
+  // background-color: $headerBg;
+  width: 100%;
+  height: 65px;
+  left: 0;
+  top: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  padding: 0% 60px;
+  @media (max-width: 1100px) {
+    padding: 0% 30px;
+  }
+  @include mobile {
+    height:55px;
+  }
+  .dFlex{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap:12px;
+  }
+  .logo {
+    // margin-left: 250px;
+    @include mobile{
+      width: 20px;
+    }
+  }
+  .tabs {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // margin-right: 250px;
+    .centerTabs {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      @include mobile{
+        display: none;
+      }
+      h3 {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: capitalize;
+        color: $textColor;
+        padding-left: 22px;
+      }
+    }
+    .icons {
+      padding-left: 60px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .connectButton{
+        @include mobile{
+          display: none;
+        }
+      }
+      .headerIcons {
+        width: 36px;
+        height: 36px;
+        background: $textColor;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        cursor: pointer;
+        @include mobile{
+          width: 25px;
+          height: 25px;
+        }
+      }
+      .toggleIcon {
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .searchSection {
+        width: 140px;
+        height: 36px;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 10px;
+        // .ant-btn{
+        //   border-color: unset;
+        // }
+        @include mobile{
+          display: none;
+        }
+      }
+    }
+  }
+  .searchBar{
+    @include mobile{
+      display: none;
+    }
+  }
+}
+.mobileConnectButton{
+  width: 100%;
+  border-radius: 10px !important;
+  box-shadow: 0px 4px 16px -7px rgba(83, 82, 237, 0.57);
+  margin-bottom: 12px;
+  .ant-btn-primary {
+    @include mobile {
+      width: 100%;
+    }
+  }
+}
+.searchPlaceHolder{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  height: 100%;
+  // font-size: 1.3rem;
+  padding: 2% 0 !important;
+
+}
+.searchBarAutoComplete{
+  // background: red !important;
+  font-size: 1.3rem !important;
+}
+.ant-select-single:not(.ant-select-customize-input) .ant-select-selector{
+  height: 36px !important;
+}

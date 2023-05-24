@@ -1,0 +1,442 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.CollectionViewPageWrapper {
+  width: 100%;
+  background: #ffffff;
+  .CollectionViewPageHeader {
+    width: 100%;
+    margin-bottom: 5px;
+    height: 400px;
+    clip-path: polygon(0 0, 100% 0%, 100% 80%, 49% 100%, 0 80%);
+    position: relative;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .CollectionViewHeadingSection {
+      position: absolute;
+      top: 27%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @include mobile {
+        top: 30%;
+        width: 100%;
+      }
+      .CollectionViewText {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 35px;
+        color: $textColor;
+        @include mobile {
+          line-height: 1.25;
+          font-size: 18px;
+          text-align: center;
+          display: inline-block;
+          width: 100%;
+        }
+      }
+      .CollectionViewHeading {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 50px;
+        line-height: 75px;
+        text-align: center;
+        z-index: 20;
+        color: $textColor;
+        @include mobile {
+          line-height: 1.25;
+          font-size: 24px;
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .CollectionViewPageHeader::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+  }
+  .mobileBannerDetailsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -60px;
+    .mobileBannerDetails {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center;
+      width: 80%;
+      z-index: 10;
+      .values {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+        align-items: center;
+      }
+      .mobileItemWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #ffffff;
+        box-shadow: 0px 4px 16px -7px rgba(83, 82, 237, 0.57);
+        border-radius: 10px;
+        padding: 20px;
+        width: 140px;
+        margin-top: 15px;
+      }
+      .imageWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 160px;
+        height: 160px;
+        border-radius: 10px;
+        img {
+          width: 100%;
+          object-fit: contain;
+        }
+      }
+    }
+  }
+  .mainWrapper {
+    position: relative;
+  }
+  .top {
+    top: 25px !important;
+  }
+  .icons {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    span {
+      background: $ExploreBtnBg;
+      width: 25px;
+      text-align: center;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  .bannerDetailsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: -90px;
+    position: relative;
+    @media screen and (max-width: 1200px) {
+      margin-top: -130px;
+    }
+    @media screen and (max-width: 700px) {
+      margin-top: -90px;
+    }
+    .bannerDetails {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 60%;
+      @media screen and (max-width: 1200px) {
+        width: 90%;
+      }
+      .itemWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: #ffffff;
+        box-shadow: 0px 4px 16px -7px rgba(83, 82, 237, 0.57);
+        border-radius: 10px;
+        width: 140px;
+        padding: 20px;
+        @media screen and (max-width: 1000px) {
+          width: 110px;
+          padding: 12px;
+          font-size: 12px;
+        }
+        @media screen and (max-width: 700px) {
+          width: 90px;
+          padding: 14px;
+          font-size: 9px;
+        }
+      }
+      .imageWrapper {
+        width: 160px;
+        height: 160px;
+        background: #ffffff;
+        box-shadow: 0px 4px 16px -7px rgba(83, 82, 237, 0.57);
+        border-radius: 10px;
+        overflow: hidden;
+        @media screen and (max-width: 700px) {
+          width: 110px;
+          height: 110px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .collectionDetailsWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 40px;
+    @include mobile {
+      padding: 0% 5%;
+    }
+    .collectionDetails {
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 12px;
+      width: 60%;
+      background: #ffffff;
+      box-shadow: 0px 4px 16px -7px rgba(83, 82, 237, 0.57);
+      border-radius: 10px;
+      padding: 20px;
+      .descriptionShort {
+        width: 100%;
+        text-align: center;
+      }
+      @include mobile {
+        width: 100%;
+      }
+    }
+  }
+  .searchBar {
+    width: 100%;
+    background: $SkyBlurColor;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 60px;
+    @media screen and (max-width: 1100px) {
+      padding: 10px 30px;
+    }
+    margin-top: 12px;
+
+    @include mobile {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-bottom: 12px;
+    }
+    .reset {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: $GrayColor;
+      @include mobile {
+        margin-left: unset;
+        margin-top: 12px;
+      }
+    }
+    .inputSection {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      @include mobile {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 12px;
+        width: 100%;
+      }
+      .filterImage {
+        margin-left: 27px;
+        @include mobile {
+          display: none;
+        }
+      }
+      .filterDropdown {
+        width: 160px;
+        height: 45px;
+        background: $textColor;
+        border-radius: 5px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 27px;
+        a {
+          color: #7c96b6;
+        }
+        @include mobile {
+          margin-left: unset;
+          margin-top: 12px;
+        }
+        .downIcon {
+          width: 10px;
+          height: 10px;
+          margin-left: 5px;
+          margin-right: 5px;
+        }
+      }
+      .searchInput {
+        width: 248px;
+        @include mobile {
+          width: 100%;
+        }
+        .ant-input-affix-wrapper {
+          border: none !important;
+          border-radius: 5px;
+          height: 45px;
+        }
+      }
+    }
+  }
+  .socialIconsSection {
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    // margin-top: 12px;
+    cursor: pointer;
+    .value {
+      text-decoration: underline;
+      color: #7c96b6;
+    }
+    span {
+      text-decoration: unset !important;
+      color: #000;
+      font-weight: 700;
+    }
+    @include mobile {
+      font-size: 12px;
+    }
+    .socialIcons {
+      width: 12%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 12px;
+    }
+  }
+  .ant-select {
+    width: inherit !important;
+  }
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    background-color: unset !important;
+    border: unset !important;
+    box-shadow: unset !important;
+  }
+  .toogle_icon {
+    margin-right: 8px;
+    cursor: pointer;
+  }
+}
+.antdSpinContainer {
+  inset: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  .antdSpin {
+    width: 100%;
+    height: 100%;
+    .ant-spin-dot {
+      width: 100%;
+      height: 100%;
+      .ant-spin-dot-item {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+.display_none {
+  @include mobile {
+    display: none !important;
+  }
+}
+.ant-tooltip {
+  z-index: 999 !important;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  box-shadow: 0px 4px 16px -7px rgba(83, 82, 237, 0.57);
+  background: #ffffff;
+}
+.filterBar {
+  flex-direction: column;
+  position: sticky;
+  top: 80px;
+  height: calc(100vh - 80px);
+  width: 340px;
+  overflow: auto;
+  margin-left: -10px;
+  margin-right: 16px;
+}
+.filterBarMob{
+  flex-direction: column;
+  position: sticky;
+  top: 80px;
+  height: calc(100vh - 80px);
+  width: 100%;
+  overflow: auto;
+  margin-left: -10px;
+  margin-right: 16px;
+}
+.filteredNftsListMob{
+  width: 100%;
+}
+.filtersSection {
+  width: 100%;
+  .ant-collapse-borderless {
+    background: unset !important;
+    .ant-collapse-item {
+      border-bottom: unset !important;
+    }
+  }
+  .filtersHeader {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: #303549;
+    // width: 340px;
+  }
+  .ant-checkbox-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 12px;
+  }
+}

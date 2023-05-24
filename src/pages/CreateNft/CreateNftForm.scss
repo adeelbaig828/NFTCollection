@@ -1,0 +1,287 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.MintNftContainer{
+  //   background: orange;
+     width: 100%; padding: 2% 0 7% 0;
+  }
+  .MintNftMainDiv{
+      display: flex; align-items: center; justify-content: center; width: 100%;
+  }
+  .MintNftFormDiv{
+          display: flex;
+          width: 80%;
+          justify-content: space-evenly;
+          align-items: center;
+          // background: green;
+          
+  }
+  @media screen and (max-width: 768px) {
+    .MintNftFormDiv {
+      flex-direction: column;
+      justify-content: center;
+
+    }
+  }
+
+  .MintNftLeftForm{
+      width: 30%; 
+      height: 45vh;
+  }
+  @media screen and (max-width: 768px) {
+    .MintNftLeftForm{
+      width: 80%; 
+  }
+  }
+  @media screen and (max-width: 520px) {
+    .MintNftLeftForm{
+      width: 100%; 
+  }
+  
+  }
+  .MintNftImageDiv{
+    cursor: pointer !important;
+      width: 100% !important;
+      height: 100% !important;
+      object-fit: cover !important;
+  }
+  .MintNftRightForm{
+      display: flex; flex-direction: column; width: 50%;
+  }
+  @media screen and (max-width: 768px) {
+    .MintNftRightForm{
+       width: 80%;
+  }
+  }
+  @media screen and (max-width: 520px) {
+    .MintNftRightForm{
+       width: 100%;
+  }
+  }
+  .MintNftInputDiv{
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  }
+  .MintNftInputDiv label{
+      color: rgba(0,0,0,.85);
+  }
+  .MintNftInputDiv input{
+      line-height: 2.9715;
+      background: #f2fafc ;
+      border-radius: 10px ;
+      border: none ;
+      padding: 0 2%;
+      outline: none;
+  }
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .MintNftImageDiv{
+    position:relative; 
+    width: 250px;
+    height: 350px;
+
+  }
+  .MintNftImage{
+     width: 100%; position: absolute; height: 100%;
+
+  }
+  .MintNftUploadText{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    width: 100%;
+    height: 250px;
+    color: gray;
+    font-size: 1.5rem;
+  }
+  .MintNftButtonDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 2%;
+  }
+  .MintNftChooseFile{
+    // visibility: hidden;
+    // position: absolute;
+  }
+
+  .MintNftButton{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 5%;
+    width: 30%;
+    background: #f37342;
+    border-radius: 10px;
+    border-top: 1px dashed rgba(48, 53, 73, 0.25);
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: #ffffff;
+    padding: 1% 2%;
+  }
+  .MintNftButton button{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+  }
+  .MintNftButton img{
+    width: 15%;
+    cursor: pointer;
+
+  }
+  @media screen and (max-width: 520px) {
+    .MintNftButton{
+      width: 40%;
+    }
+  }
+
+.CreateCollectionFormWrapper {
+  width: 100%;
+  .header {
+    padding: 0% 5%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    .step1 {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      color: #f37342;
+    }
+    .desc {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      color: #303549;
+      margin-top: 19px;
+    }
+  }
+  .CreateNftForm {
+    padding: 0% 5%;
+    .CreateNftFormItemWrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: row wrap;
+      .mediaAndDiscordLinks {
+        width: 48%;
+        .ant-form-item {
+          width: 100%;
+        }
+      }
+      .dFlex {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        .firstSwitch {
+          margin-left: unset !important;
+        }
+        .ant-form-item {
+          width: unset !important;
+          margin-left: 14px;
+        }
+      }
+      .ant-form-item {
+        width: 48%;
+      }
+      .ant-input-group-addon {
+        background: $InputBg !important;
+        line-height: 2.9715;
+        border-radius: 10px !important;
+        border: none !important;
+      }
+      .ant-input-affix-wrapper {
+        line-height: 2.9715;
+        background: $InputBg !important;
+        border-radius: 10px !important;
+        border: none !important;
+      }
+      .ant-input-number {
+        line-height: 2.9715;
+        background: $InputBg !important;
+        border-radius: 10px !important;
+        border: none !important;
+        width: 100%;
+      }
+      .ant-input {
+        line-height: 2.9715;
+        background: $InputBg !important;
+        border-radius: 10px !important;
+        border: none !important;
+      }
+      .ant-input-number-input {
+        line-height: 2.9715;
+        background: $InputBg !important;
+        border-radius: 10px !important;
+        border: none !important;
+      }
+      .ant-select {
+        line-height: 2.9715;
+      }
+      .ant-select-selector {
+        background: $InputBg !important;
+        line-height: 2.9715;
+        background: $InputBg !important;
+        border-radius: 10px !important;
+        border: none !important;
+        height: 48px !important;
+        align-items: center;
+      }
+      .ant-switch {
+        background: rgba(243, 115, 66, 0.14) !important;
+        border-radius: 100px !important;
+        height: 17px;
+      }
+      .ant-switch-handle::before {
+        background: #facbb9 !important;
+      }
+      .ant-switch-handle::after {
+        background: #f37342 !important;
+      }
+    }
+    .submitButton {
+      .ant-form-item {
+        border-top: 1px dashed rgba(48, 53, 73, 0.25);
+        padding-top: 49px;
+      }
+      .ant-btn-primary {
+        width: 180px;
+        height: 66px;
+        background: #f37342;
+        border-radius: 10px;
+        border: unset !important;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #ffffff;
+        margin-bottom: 60px;
+
+        img {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+}

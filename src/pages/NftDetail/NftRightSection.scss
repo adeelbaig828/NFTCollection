@@ -1,0 +1,202 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.NftrightSectionWrapper {
+  margin-top: 152px;
+  width: 65%;
+  @include mobile{
+    width:100%;
+    margin-top: 40px;
+  }
+  .RightHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .itemDetails {
+      display: flex;
+      flex-flow: row wrap;
+      //   margin-top: 28px;
+      .detail {
+        padding-top: 31px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 35px;
+        color: $CreateBtnBg;
+      }
+    }
+    .offerBtn {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-top: 15px;
+      .mintNft {
+        padding: 15px 60px;
+        background: #5e8ecc;
+        border-radius: 10px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #ffffff;
+        margin-right: 20px;
+        border-color: #ffffff;
+        cursor: pointer;
+      }
+      .buyNow {
+        padding: 15px 60px;
+        background: $ExploreBtnBg;
+        border-radius: 10px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #ffffff;
+        margin-right: 20px;
+        @media screen and (max-width:500px) {
+        font-size: 14px;
+        padding: 15px 45px;
+      }
+      @media screen and (max-width:400px) {
+        font-size: 12px;
+        padding: 15px 30px;
+      }
+      }
+      .makeOffer {
+        padding: 15px 60px;
+        background: #ffffff;
+        border: 1px solid rgba(48, 53, 73, 0.22);
+        border-radius: 10px;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: $CreateBtnBg;
+        @media screen and (max-width:500px) {
+          font-size: 14px;
+          padding: 15px 45px;
+        }
+        @media screen and (max-width:400px) {
+          font-size: 12px;
+          padding: 15px 30px;
+        }
+      }
+   
+    
+    }
+    .itemInfo {
+      margin-top: 15px;
+      margin-left: 12px;
+      .noOfItems {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: $GrayColor;
+      }
+      .infoIcon {
+        margin-left: 28px;
+      }
+      .infoText {
+        margin-left: 13px;
+      }
+    }
+    .socialIcons {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .socialIconImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 36px;
+        height: 36px;
+        background: $textColor;
+        border: 1px solid rgba(124, 150, 182, 0.34);
+        box-sizing: border-box;
+        border-radius: 5px;
+        margin-left: 13px;
+        cursor: pointer;
+      }
+      .changebg {
+        background: #000000;
+      }
+      .changebgColor {
+        background: $ExploreBtnBg;
+        cursor: pointer;
+      }
+    }
+    .leftSideWithImage {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      @include mobile {
+        
+      }
+      .priceDetails {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        .text {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 35px;
+          text-transform: uppercase;
+          color: $GrayColor;
+        }
+        .icon {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 30px;
+          line-height: 36px;
+          text-transform: capitalize;
+          color: $CreateBtnBg;
+        }
+      }
+      .textSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        .createdBy {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 35px;
+          text-transform: uppercase;
+          color: $GrayColor;
+        }
+        .creatorName {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          text-transform: capitalize;
+          color: #303549;
+        }
+      }
+      .imageSection {
+        img {
+          width: 116px;
+          height: 116px;
+        }
+      }
+    }
+  }
+}

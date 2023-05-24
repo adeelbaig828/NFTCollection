@@ -1,0 +1,165 @@
+@import "../../styles/variables";
+@import "../../styles/mixins.scss";
+
+.homePage {
+  .subHeader {
+    position: relative;
+    .bgImage {
+      width: 100%;
+      height: 811px;
+      left: 0px;
+      top: 0px;
+      right: 0;
+      background-size:cover !important;
+      padding: 0% 0px;
+      @include mobile{
+        flex-direction: column;
+        height: auto;
+        padding: 5% 5%;
+      }
+      .leftSide {
+        width: 48%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        // margin-left: 250px;
+        @include mobile{
+          width:100%
+        }
+        .leftHeading {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 64px;
+          line-height: 75px;
+          color: $textColor;
+          @media screen and (max-width:1100px) {
+              font-size: 46px;
+              line-height: 75px;
+          }
+          @media screen and (max-width:850px) {
+            font-size: 31px;
+            line-height: 52px;
+          }          
+          @include mobile{
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+            margin-top: 20%;
+          }
+        }
+        .leftSubHeading {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 20px;
+          line-height: 35px;
+          color: $textColor;
+          @media screen and (max-width:850px) {
+            font-size: 16px;
+            line-height: 27px;
+          }
+
+          @include mobile{
+            display: none;
+          }
+        }
+      }
+      .btnSection {
+        display: flex;
+        align-items: center;
+        margin-top: 22px;
+        @include mobile{
+          width: 100%;
+        }
+        .link{
+          @include mobile{
+            width: 48%;
+          }
+        }
+        .explore {
+          width: 250px;
+          height: 75px;
+          background: $ExploreBtnBg;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          text-transform: capitalize;
+          color: $textColor;
+          @media screen and (max-width:850px) {
+            width: 170px;
+            height: 53px;
+            font-size: 18px;
+            line-height: 22px;
+          }
+          @include mobile{
+            height: unset;
+            font-size: 14px;
+            line-height: 17px;
+            padding: 11px 38px;
+            width: max-content;
+            margin: 0 auto;
+            margin-right: 0;
+          }
+        }
+        .create {
+          width: 250px;
+          height: 75px;
+          background: $textColor;
+          border-radius: 10px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 28px;
+          text-transform: capitalize;
+          color: $CreateBtnBg;
+          margin-left: 12px;
+          @media screen and (max-width:850px) {
+            width: 170px;
+            height: 53px;
+            font-size: 18px;
+            line-height: 22px;
+          }
+          @include mobile{
+            height: unset;
+            font-size: 14px;
+            line-height: 17px;
+            padding: 11px 38px;
+            width: max-content;   
+            margin: 0 auto;
+          }
+        }
+      }
+    }
+    .footerImage {
+      margin-top: -19px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  .rightSide {
+    // margin-right: 25
+    width: 32%;
+    @media screen and (max-width:850px) {
+      width: 40%;
+    }
+    @include mobile{
+      width:100%;
+      padding: 0 30px;
+    }
+  }
+}
+
+.main_banner1 {
+  height: 100%;
+}

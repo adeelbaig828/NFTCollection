@@ -1,0 +1,202 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+.ant-upload{
+ width: 100%;
+}
+.CreateCollectionFormWrapper {
+  width: 100%;
+  margin-top: 8%;
+  .step1Header {
+    padding: 0% 60px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    @media screen and (max-width:1100px) {
+      padding: 0% 30px;
+    }
+    .step1 {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      color: #f37342;
+    }
+    .desc {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 28px;
+      color: #303549;
+      margin-top: 19px;
+    }
+  }
+  .CreateCollectionForm {
+    padding: 0% 60px;
+    @media screen and (max-width:1100px) {
+      padding: 0% 30px;
+    }
+    .CreateCollectionFormItemWrapper {
+      display: flex;
+      justify-content: space-between;
+      flex-flow: row wrap;
+      @include mobile{
+        flex-direction: column;
+      }
+      .mediaAndDiscordLinks {
+        width: 48%;
+        @include mobile{
+          width: 100%;
+        }
+        .ant-form-item {
+          width: 100%;
+        }
+      }
+      .displayFlex {
+        display: flex;
+        align-items: flex-start;
+        width: 100%;
+        justify-content: space-between;
+        @include mobile{
+          width: 100%;
+          justify-content: space-between;
+        }
+        .firstSwitch {
+          margin-left: unset !important;
+        }
+        .ant-form-item {
+          width: unset !important;
+          margin-left: 14px;
+          @include mobile{
+            margin-left: unset;
+          }
+        }
+      }
+      .ant-form-item {
+        width: 48%;
+        @include mobile{
+          width: 100%;
+        }
+      }
+      .ant-input-group-addon {
+        background: $InputBg !important;
+        line-height: 2.9715;
+        border-radius: 10px !important;
+        border: none !important;
+      }
+      .ant-input-affix-wrapper {
+        line-height: 2.9715;
+        background: $InputBg !important;
+        border-radius: 10px !important;
+        border: none !important;
+      }
+      .ant-input-number {
+        line-height: 2.9715;
+        background: $InputBg !important;
+        border-radius: 10px !important;
+        border: none !important;
+        width: 100%;
+      }
+      .ant-input {
+        line-height: 2.9715;
+        background: $InputBg !important;
+        border-radius: 10px !important;
+        border: none !important;
+      }
+      .ant-input-number-input {
+        line-height: 2.9715;
+        background: $InputBg !important;
+        border-radius: 10px !important;
+        border: none !important;
+      }
+      .ant-radio-checked .ant-radio-inner{
+        border-color:rgba(243, 115, 66, 0.14) !important ;
+        // background: #f37342 !important;
+
+      }
+      .ant-radio-inner{
+        border-color:rgba(243, 115, 66, 0.14) !important ;
+        background: #facbb9 !important;
+
+      }
+      .ant-select {
+        line-height: 2.9715;
+      }
+      .ant-select-selector {
+        background: $InputBg !important;
+        line-height: 2.9715;
+        background: $InputBg !important;
+        border-radius: 10px !important;
+        border: none !important;
+        height: 48px !important;
+        align-items: center;
+      }
+      .ant-switch {
+        background: rgba(243, 115, 66, 0.14) !important;
+        border-radius: 100px !important;
+        height: 17px;
+      }
+      .ant-switch-handle::before {
+        background: #facbb9 !important;
+      }
+      .ant-switch-handle::after {
+        background: #f37342 !important;
+      }
+    }
+    .nextButton {
+      .ant-form-item {
+        border-top: 1px dashed rgba(48, 53, 73, 0.25);
+        padding-top: 49px;
+      }
+      .ant-btn-primary {
+        width: 180px;
+        height: 66px;
+        background: #f37342;
+        border-radius: 10px;
+        border: unset !important;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #ffffff;
+        margin-bottom: 60px;
+
+        img {
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .infoIcon{
+    margin-left:6px;
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    img{
+      width: inherit;
+      height: inherit;
+      object-fit: contain;
+    }
+  }
+  .prefixColor {
+    color: #566c8e;
+  }
+  .ant-input-prefix {
+    margin-right: unset !important;
+  }
+}
+
+.CreateCollectionFormWrapper .CreateCollectionForm .CreateCollectionFormItemWrapper .CreateCollectionFormIteminner1 .ant-form-item, .CreateCollectionFormWrapper .CreateCollectionForm .CreateCollectionFormItemWrapper .CreateCollectionFormIteminner2 .ant-form-item {
+  width: 100%;
+}
+.CreateCollectionFormIteminner1, .CreateCollectionFormIteminner2 {
+  width: 48%;
+  @include mobile {
+    width: 100%;
+  }
+}  

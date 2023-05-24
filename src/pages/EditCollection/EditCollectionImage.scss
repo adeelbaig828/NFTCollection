@@ -1,0 +1,273 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.EditCollectionUploadImage {
+  .EditCollectionHeader {
+    width: 100%;
+    margin-bottom: 5px;
+    img {
+      width: 100%;
+      height: inherit;
+    }
+    .EditCollectionHeadingSection {
+      position: absolute;
+      top: 27%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 1500px) {
+        top: 22%;
+      }
+      @media screen and (max-width: 1200px) {
+        top: 16%;
+      }
+      @media screen and (max-width: 850px) {
+        top: 19%;
+      }
+      @include mobile {
+        top: 28%;
+        width: 100%;
+      }
+      @media screen and (max-width: 400px) {
+        top: 25%;
+      }
+      .EditCollectionText {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 35px;
+        color: $textColor;
+        @include mobile {
+          line-height: 1.25;
+          font-size: 18px;
+          text-align: center;
+          display: inline-block;
+          width: 100%;
+        }
+      }
+      .EditCollectionHeading {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 75px;
+        text-align: center;
+        color: $textColor;
+        @media screen and (max-width: 1150px) {
+          font-size: 34px;
+          line-height: 45px;
+        }
+        @include mobile {
+          line-height: 1.25;
+          font-size: 24px;
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+  .EditCollectionUploadImageWrapper {
+    .ant-radio-inner {
+      background: rgba(243, 115, 66, 0.14) !important;
+      border-color: $ExploreBtnBg !important;
+    }
+    .ant-radio-inner::after {
+      background: $ExploreBtnBg !important;
+    }
+    .submitBtn {
+      margin-top: 30px;
+      padding: 15px 40px;
+      display: flex;
+      justify-content: center;
+      background: $ExploreBtnBg;
+      border-radius: 10px;
+      width: 150px;
+      margin-bottom: 60px;
+      cursor: pointer;
+      .submit {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        text-transform: capitalize;
+        color: #ffffff;
+      }
+    }
+    .agreeSection {
+      display: flex;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin-top: 30px;
+      .agree {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 21px;
+        color: $FadeGrayColor;
+      }
+      .termConditions {
+        color: $OrangeColor;
+      }
+    }
+    .dropZoneHeader {
+      width: 100%;
+    }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0% 60px;
+    @media screen and (max-width: 1100px) {
+      padding: 0% 30px;
+    }
+    .step2Header {
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: flex-start;
+      .step2 {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: $ExploreBtnBg;
+      }
+      .desc {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        color: $CreateBtnBg;
+        margin-top: 19px;
+      }
+      .desc2 {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        color: $FadeGrayColor;
+        margin-top: 19px;
+      }
+      .changeColor{
+        color:rgba(0,0,0,.85);
+      }
+    }
+    .uploadForm {
+      margin-bottom: 30px;
+      .cardLabel{
+        display: block;
+        width: 80%;
+        margin: 2rem auto;
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 21px;
+        color: $CreateBtnBg;
+        @include mobile{
+          width: 100%;
+        }
+      }
+      .collectionImages {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 30px;
+        gap: 20px;
+        width: 80%;
+        margin: 2rem auto;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        flex-direction: column;
+        height: auto;
+        @include mobile{
+          width: 100%;
+          gap: 40px;
+        }
+        .smallImage {
+          width: 30%;
+          aspect-ratio: 1/1;
+          @include mobile{
+            width: 100%;
+          }
+          .UploadedImg {
+            width: 65px;
+            height: 65px;
+            border-radius: 100%;
+            top: 50%;
+            transform: translateY(-50%);
+            margin: 0 auto;
+          }
+          .dropzone-style {
+            height: 100%;
+          }
+        }
+        .largeImage {
+          width: 70%;
+          aspect-ratio: 1.5/1;
+          @include mobile{
+            width: 100%;
+          }
+          .dropzone-style {
+            height: 100%;
+          }
+        }
+        .dflex{
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          gap: 20px;
+          @include mobile{
+            flex-direction: column;
+            gap: 80px;
+          }
+        }
+        label{
+          display: block;
+          margin-bottom: 5px;
+          font-weight: bold;
+        }
+      }
+      .bannerImage {
+        width: 100%;
+        aspect-ratio: 7/2;
+        margin-bottom: 5rem;
+        @include mobile{
+          margin-top: 4rem;
+        }
+        .dropzone-style {
+          height: 100%;
+        }
+      }
+    }
+  }
+  .ant-select {
+    line-height: 2.9715;
+    width: 48%;
+    @include mobile {
+      width: 100%;
+    }
+    margin-bottom: 12px;
+  }
+  .ant-select-selector {
+    background: $InputBg !important;
+    line-height: 2.9715;
+    background: $InputBg !important;
+    border-radius: 10px !important;
+    border: none !important;
+    height: 48px !important;
+    align-items: center;
+  }
+}

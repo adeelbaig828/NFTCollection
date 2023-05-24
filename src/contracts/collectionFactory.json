@@ -1,0 +1,205 @@
+{"address":"0xd9145CCE52D386f254917e481eB44e9943F39138",
+"abi":
+[
+	{
+		"inputs": [
+			{
+				"internalType": "string",
+				"name": "_name",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_symbol",
+				"type": "string"
+			},
+			{
+				"internalType": "string",
+				"name": "_uri",
+				"type": "string"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_totalSupply",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_mintPrice",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_startDate",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "_expirationDate",
+				"type": "uint256"
+			}
+		],
+		"name": "createCollection",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "newOwner",
+				"type": "address"
+			},
+			{
+				"internalType": "address",
+				"name": "_nftCollection",
+				"type": "address"
+			}
+		],
+		"name": "transferOwner",
+		"outputs": [],
+		"stateMutability": "payable",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"name": "collectionSales",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "sales",
+				"type": "uint256"
+			},
+			{
+				"internalType": "uint256",
+				"name": "lastSoldDate",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "expirationDate",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_owner",
+				"type": "address"
+			}
+		],
+		"name": "getCollections",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "address[]",
+						"name": "nftcollections",
+						"type": "address[]"
+					}
+				],
+				"internalType": "struct NFTDepotFactory.CollectionsbyOwner",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [
+			{
+				"internalType": "address",
+				"name": "_collection",
+				"type": "address"
+			}
+		],
+		"name": "getCollectionSales",
+		"outputs": [
+			{
+				"components": [
+					{
+						"internalType": "uint256",
+						"name": "sales",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "lastSoldDate",
+						"type": "uint256"
+					}
+				],
+				"internalType": "struct NFTDepotFactory.CollectionSales",
+				"name": "",
+				"type": "tuple"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "getTrendingCollections",
+		"outputs": [
+			{
+				"internalType": "address[]",
+				"name": "",
+				"type": "address[]"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "nftTemp",
+		"outputs": [
+			{
+				"internalType": "contract ERC721Template",
+				"name": "",
+				"type": "address"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"inputs": [],
+		"name": "topSale",
+		"outputs": [
+			{
+				"internalType": "uint256",
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"stateMutability": "view",
+		"type": "function"
+	}
+]
+}
+
+
+
+
+
+

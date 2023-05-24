@@ -1,0 +1,87 @@
+@import "../../../styles/variables";
+@import "../../../styles/mixins";
+
+.newsLetterWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  .newsLetterContainer {
+    width: 80%;
+    padding: 35px;
+    background: $textColor;
+    box-shadow: 0px 4px 23px -6px rgba(94, 92, 238, 0.64);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    .subscribeHeading {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 55px;
+      color: $CreateBtnBg;
+      @include mobile {
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 24px;
+      }
+    }
+    .subscribeDesc {
+      font-family: "Rubik";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 19px;
+      line-height: 35px;
+      color: $CreateBtnBg;
+      margin-top: 20px;
+      @include mobile {
+        margin-top: 10px;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+      }
+    }
+    .unsetMargin {
+      margin-top: unset;
+    }
+    .emailContainer {
+      width: 100%;
+      margin-top: 20px;
+      border-radius: 10px !important;
+      .ant-input-affix-wrapper {
+        line-height: 2.2715;
+        background:$InputBg  !important;
+        border-radius: 10px !important;
+        border: none !important;
+        @include mobile {
+          padding: 0;
+        }
+      }
+      .ant-input{
+        background: $InputBg !important;
+        @include mobile {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #566C8E; 
+          padding: 18px 25px;
+        }
+      }
+      .arrowContainer{
+        padding: 20px;
+        background: $ExploreBtnBg;
+        border-radius: 0px 10px 10px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          height: 12px;
+        }
+      }
+    }
+  }
+}

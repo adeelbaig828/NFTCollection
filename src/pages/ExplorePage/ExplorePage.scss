@@ -1,0 +1,103 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.ExplorePageWrapper {
+  width: 100%;
+  .ExplorecardGrid {
+    margin-top: 20px;
+    padding: 0% 60px;
+    @media screen and (max-width:1100px) {
+      padding: 0% 30px;
+    }
+
+    // margin-left: 257px;
+    // margin-right: 237px;
+    // .ant-col {
+    //   margin-top: 30px !important;
+    //   @media screen and (max-width:1200px) {
+    //     flex: 0 0 50%;
+    //     max-width: 50%;       
+    //   }
+    //   @media screen and (max-width:900px) {
+    //     flex: 0 0 100%;
+    //     max-width: 100%;       
+    //   }
+    // }
+    .infinite-scroll-component__outerdiv{
+      .infinite-scroll-component {
+        overflow: unset !important;
+      }
+    }
+  }
+
+  .ExplorePageHeader {
+    width: 100%;
+    margin-bottom: 5px;
+    img{
+      width: 100%;
+      height: inherit;
+    }
+    .exploreHeadingSection {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      @media screen and (max-width: 1500px) {
+        top: 17%;
+      }
+    //   @media screen and (max-width: 1100px) {
+    // }
+    // @media screen and (max-width: 900px) {
+    // }
+      @include mobile{
+        top: 15%;
+        width: 100%;
+      }
+      .exploreText {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 35px;
+        color: $textColor;
+        @media screen and (max-width: 900px) {
+          font-size: 14px;
+          line-height: 14px;
+        }
+        @include mobile{
+          line-height: 1.25;
+          font-size: 16px;
+          text-align: center;
+          display: inline-block;
+          width: 100%;
+        }
+      }
+      .exploreHeading {
+        font-family: "Rubik";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 75px;
+        text-align: center;
+        color: $textColor;
+        @media screen and (max-width: 1300px){
+            font-size: 44px;
+        }
+        @media screen and (max-width: 900px) {
+            font-size: 33px;
+        }
+        @include mobile{
+          line-height: 1.25;
+          font-size: 24px;
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

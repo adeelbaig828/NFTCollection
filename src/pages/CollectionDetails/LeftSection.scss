@@ -1,0 +1,51 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.leftSideSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 30%;
+    .searchedCard{
+      width: fit-content;
+    }
+    .cardFotterSection {
+      margin-top: 30px;
+      width: 100%;
+      .unsetBorder{
+          border-bottom: unset !important;
+      }
+      .flexStyle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px dashed rgba(48, 53, 73, 0.25);
+        margin-top: 22px;
+        .key {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          color: $GrayColor;
+        }
+        .value {
+          font-family: "Rubik";
+          font-style: normal;
+          font-weight: 400;
+          font-size: 18px;
+          line-height: 21px;
+          color: $CreateBtnBg;
+          .dFlex{
+              img{
+                  margin-right: 14px;
+                  margin-top: -4px;
+              }
+          }
+        }
+      }
+    }
+  }

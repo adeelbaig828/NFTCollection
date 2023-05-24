@@ -1,0 +1,49 @@
+@import "../../../styles/mixins";
+@import "../../../styles/variables";
+.editNftModalWrapper {
+  .footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+    z-index: 5;
+    .ant-btn {
+      background: $ExploreBtnBg !important;
+      border-radius: 5px !important;
+      border: unset !important;
+      font-family: "Rubik";
+      text-transform: capitalize;
+      color: #ffffff !important;
+    }
+    .bgColor {
+      background: $FadeTextColor !important;
+    }
+  }
+  .editTitle {
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    color: $CreateBtnBg;
+  }
+  .ant-input {
+    line-height: 2.9715;
+    background: $InputBg !important;
+    border-radius: 10px !important;
+    border: none !important;
+  }
+  .ant-btn {
+    height: 50px;
+    background: $ExploreBtnBg;
+    border: none !important;
+    border-radius: 10px;
+    width: 100%;
+    font-family: "Rubik";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: capitalize;
+    color: $textColor;
+  }
+}

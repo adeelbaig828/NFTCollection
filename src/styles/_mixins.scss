@@ -1,0 +1,30 @@
+@import "variables";
+@mixin desktop {
+  @media (min-width: ($breakpoint)) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+
+@mixin customMobile {
+  @media (max-width: 1169px) {
+    @content;
+  }
+}
+
+@mixin customDesktop {
+  @media (min-width: 1170px) {
+    @content;
+  }
+}
+
+@mixin small_screen {
+  @media (min-width: 992px) and (max-width: 1200px) {
+    @content;
+  }
+}

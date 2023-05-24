@@ -1,0 +1,26 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.flickerWrapper {
+  width: 63%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+  @include mobile{
+    width: 80%;
+  }
+  .arrow {
+    padding: 8px 14px;
+    background: $ExploreBtnBg;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .leftArrow{
+      margin-right: 14px;
+  }
+  .rightArrow{
+    margin-left: 14px;
+}
+}
